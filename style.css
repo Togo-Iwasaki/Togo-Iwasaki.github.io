@@ -1,0 +1,107 @@
+:root {
+  --bg: #fdfdfc;
+  --text: #222222;
+  --muted: #707070;
+  --line: #e4e4e2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161616;
+    --text: #e2e2e2;
+    --muted: #949494;
+    --line: #2c2c2c;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 80px 16px 48px;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--muted);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 56px 0 16px;
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  margin: 8px 0 0;
+}
+
+.rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rows li {
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+
+.rows li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.note {
+  display: block;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.note strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.dated {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 8px;
+}
+
+.year {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+footer {
+  margin-top: 80px;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
