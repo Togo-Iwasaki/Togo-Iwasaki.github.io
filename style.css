@@ -85,6 +85,11 @@ h2 {
   font-size: 0.875rem;
 }
 
+.desc {
+  display: block;
+  font-size: 0.9375rem;
+}
+
 .note strong {
   color: var(--text);
   font-weight: 600;
