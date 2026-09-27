@@ -59,7 +59,8 @@ h2 {
 
 .links {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 4px 20px;
   margin: 8px 0 0;
 }
 
